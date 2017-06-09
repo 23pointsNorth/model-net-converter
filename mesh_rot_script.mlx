@@ -1,0 +1,42 @@
+<!DOCTYPE FilterScript>
+<FilterScript>
+ <!-- Keep order of the (sub)params! -->
+ <!-- For X -->
+ <filter name="Transform: Rotate">
+  <Param enum_val0="X axis" enum_val1="Y axis" enum_cardinality="4" enum_val2="Z axis" enum_val3="custom axis" type="RichEnum" value="0" name="rotAxis"/>  <!-- Axis of rotation - value -->
+  <Param enum_val0="origin" enum_val1="barycenter" enum_cardinality="3" enum_val2="custom point" type="RichEnum" value="0" name="rotCenter"/>
+  <Param type="RichDynamicFloat" value="XANGLE" min="-360" name="angle" max="360"/>   <!-- Angle of rotation -->
+  <Param type="RichBool" value="false" name="snapFlag"/>
+  <Param x="0" y="0" z="0" type="RichPoint3f" name="customAxis"/>
+  <Param x="0" y="0" z="0" type="RichPoint3f" name="customCenter"/>
+  <Param type="RichFloat" value="30" name="snapAngle"/>
+  <Param type="RichBool" value="true" name="Freeze"/>
+  <Param type="RichBool" value="false" name="ToAll"/>
+ </filter>
+
+  <!-- For Y -->
+ <filter name="Transform: Rotate">
+  <Param enum_val0="X axis" enum_val1="Y axis" enum_cardinality="4" enum_val2="Z axis" enum_val3="custom axis" type="RichEnum" value="1" name="rotAxis"/>  <!-- Axis of rotation - value -->
+  <Param enum_val0="origin" enum_val1="barycenter" enum_cardinality="3" enum_val2="custom point" type="RichEnum" value="0" name="rotCenter"/>
+  <Param type="RichDynamicFloat" value="YANGLE" min="-360" name="angle" max="360"/>   <!-- Angle of rotation -->
+  <Param type="RichBool" value="false" name="snapFlag"/>
+  <Param x="0" y="0" z="0" type="RichPoint3f" name="customAxis"/>
+  <Param x="0" y="0" z="0" type="RichPoint3f" name="customCenter"/>
+  <Param type="RichFloat" value="30" name="snapAngle"/>
+  <Param type="RichBool" value="true" name="Freeze"/>
+  <Param type="RichBool" value="false" name="ToAll"/>
+ </filter>
+
+  <!-- For Z -->
+ <filter name="Transform: Rotate">
+  <Param enum_val0="X axis" enum_val1="Y axis" enum_cardinality="4" enum_val2="Z axis" enum_val3="custom axis" type="RichEnum" value="2" name="rotAxis"/>  <!-- Axis of rotation - value -->
+  <Param enum_val0="origin" enum_val1="barycenter" enum_cardinality="3" enum_val2="custom point" type="RichEnum" value="0" name="rotCenter"/>
+  <Param type="RichDynamicFloat" value="ZANGLE" min="-360" name="angle" max="360"/>   <!-- Angle of rotation -->
+  <Param type="RichBool" value="false" name="snapFlag"/>
+  <Param x="0" y="0" z="0" type="RichPoint3f" name="customAxis"/>
+  <Param x="0" y="0" z="0" type="RichPoint3f" name="customCenter"/>
+  <Param type="RichFloat" value="30" name="snapAngle"/>
+  <Param type="RichBool" value="true" name="Freeze"/>
+  <Param type="RichBool" value="false" name="ToAll"/>
+ </filter>
+</FilterScript>
